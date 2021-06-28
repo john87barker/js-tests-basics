@@ -49,8 +49,24 @@ function testGrader(score, possible) {
 
 function timeOfDayGreeting(hour) {
     // you code below
+    if (hour <= 4) {
+        return "good night"
+    }
+    else if (hour <= 11) {
+        return ("good morning")
+    }
+    else if (hour <= 17) {
+        return ("good afternoon")
+    }
+    else if (hour <= 21) {
+        return ("good evening")
+    }
+    else if (hour <= 24) {
+        return ("good night")
+    }
 
 }
+
 
 //4. Write a function that will take in a number and return 'fever' if it indicates a fever (over 98.6) and additionally if the person should go to the hospital (at or above 103) 'fever go to hospital' (hint: try this with string concatenation), if it is under return 'no fever'
 function isFever(temp) {
