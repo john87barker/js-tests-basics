@@ -19,7 +19,21 @@ function largerNum(num1, num2) {
 
 function testGrader(score, possible) {
 
-
+    if (score / possible >= .90) {
+        return 'A'
+    }
+    if (score / possible >= .80) {
+        return 'B'
+    }
+    if (score / possible >= .70) {
+        return 'C'
+    }
+    if (score / possible >= .60) {
+        return 'D'
+    }
+    if (score / possible >= 0) {
+        return 'F'
+    }
 }
 
 
